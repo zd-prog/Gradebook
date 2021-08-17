@@ -1,0 +1,115 @@
+﻿<Page x:Class="Gradebook.Views.TimetableTeacher"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Gradebook.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="TimetableTeacher">
+
+    <Grid>
+        <TabControl>
+            <TabItem Header="Просмотр расписания" FontSize="18">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="4*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="4*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" Content="Номер недели" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="#403f3f" FontSize="21"></Label>
+                    <ComboBox IsSynchronizedWithCurrentItem="True" SelectedItem="{Binding WeekNumber}" Name="WeekNumberSelect" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" ItemsSource="{Binding WeekNumbers}" Width="150"></ComboBox>
+                    <Label Grid.Row="1" Grid.Column="0" Content="Понедельник" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#403f3f" FontSize="25"></Label>
+                    <DataGrid AutoGenerateColumns="False" Grid.Row="2" Grid.Column="0" ItemsSource="{Binding MondayClasses}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding Class.Time}"></DataGridTextColumn>
+                            <DataGridTextColumn Binding="{Binding Group.Name}"></DataGridTextColumn>
+                            <DataGridTextColumn Binding="{Binding Subject.Name}"></DataGridTextColumn>
+                            <DataGridTextColumn Binding="{Binding Auditorium}"></DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Label Grid.Row="1" Grid.Column="1" Content="Вторник" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#403f3f" FontSize="25"></Label>
+                    <DataGrid AutoGenerateColumns="False" Grid.Row="2" Grid.Column="1" ItemsSource="{Binding TuesdayClasses}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding Class.Time}"></DataGridTextColumn>
+                            <DataGridTextColumn Binding="{Binding Subject.Name}"></DataGridTextColumn>
+                            <DataGridTextColumn Binding="{Binding Auditorium}"></DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Label Grid.Row="1" Grid.Column="2" Content="Среда" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#403f3f" FontSize="25"></Label>
+                    <DataGrid AutoGenerateColumns="False" Grid.Row="2" Grid.Column="2" ItemsSource="{Binding WednesdayClasses}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding Class.Time}"></DataGridTextColumn>
+                            <DataGridTextColumn Binding="{Binding Subject.Name}"></DataGridTextColumn>
+                            <DataGridTextColumn Binding="{Binding Auditorium}"></DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Label Grid.Row="3" Grid.Column="0" Content="Четверг" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#403f3f" FontSize="25"></Label>
+                    <DataGrid AutoGenerateColumns="False" Grid.Row="4" Grid.Column="0" ItemsSource="{Binding ThursdayClasses}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding Class.Time}"></DataGridTextColumn>
+                            <DataGridTextColumn Binding="{Binding Subject.Name}"></DataGridTextColumn>
+                            <DataGridTextColumn Binding="{Binding Auditorium}"></DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Label Grid.Row="3" Grid.Column="1" Content="Пятница" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#403f3f" FontSize="25"></Label>
+                    <DataGrid AutoGenerateColumns="False" Grid.Row="4" Grid.Column="1" ItemsSource="{Binding FridayClasses}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding Class.Time}"></DataGridTextColumn>
+                            <DataGridTextColumn Binding="{Binding Subject.Name}"></DataGridTextColumn>
+                            <DataGridTextColumn Binding="{Binding Auditorium}"></DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Label Grid.Row="3" Grid.Column="2" Content="Суббота" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#403f3f" FontSize="25"></Label>
+                    <DataGrid AutoGenerateColumns="False" Grid.Row="4" Grid.Column="2" ItemsSource="{Binding SaturdayClasses}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding Class.Time}"></DataGridTextColumn>
+                            <DataGridTextColumn Binding="{Binding Subject.Name}"></DataGridTextColumn>
+                            <DataGridTextColumn Binding="{Binding Auditorium}"></DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Добавление пар" FontSize="18">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" Content="Номер недели" Foreground="#404f3f" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"></Label>
+                    <ComboBox Grid.Row="0" Grid.Column="1" SelectedItem="{Binding SelectedWeekNumberAdd}" VerticalAlignment="Center" HorizontalAlignment="Stretch" FontSize="15" ItemsSource="{Binding WeekNumbers}" Margin="35,0,35,0"></ComboBox>
+                    <Label Grid.Row="1" Grid.Column="0" Content="День недели" Foreground="#403f3f" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"></Label>
+                    <ComboBox Grid.Row="1" Grid.Column="1" SelectedItem="{Binding SelectedWeekdayAdd}" VerticalAlignment="Center" HorizontalAlignment="Stretch" FontSize="15" ItemsSource="{Binding Weekdays}" Margin="35,0,35,0"/>
+                    <Label Grid.Row="2" Grid.Column="0" Content="Время" Foreground="#403f3f" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"></Label>
+                    <ComboBox Grid.Row="2" Grid.Column="1" SelectedItem="{Binding SelectedClassAdd}" VerticalAlignment="Center" HorizontalAlignment="Stretch" FontSize="15" ItemsSource="{Binding ClassesAdd}" Margin="35,0,35,0"></ComboBox>
+                    <Label Grid.Row="4" Grid.Column="0" Content="Группа" Foreground="#403f3f" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"></Label>
+                    <ComboBox Grid.Row="4" Grid.Column="1" SelectedItem="{Binding SelectedGroupAdd}" VerticalAlignment="Center" HorizontalAlignment="Stretch" FontSize="15" ItemsSource="{Binding GroupsAdd}" Margin="35,0,35,0"></ComboBox>
+                    <Label Grid.Row="3" Grid.Column="0" Content="Предмет" Foreground="#403f3f" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"></Label>
+                    <ComboBox Grid.Row="3" Grid.Column="1" SelectedItem="{Binding SelectedSubjectAdd}" VerticalAlignment="Center" HorizontalAlignment="Stretch" FontSize="15" ItemsSource="{Binding SubjectsAdd}" Margin="35,0,35,0"></ComboBox>
+                    <Label Grid.Row="5" Grid.Column="0" Content="Аудитория" Foreground="#403f3f" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"></Label>
+                    <ComboBox Grid.Row="5" Grid.Column="1" SelectedItem="{Binding SelectedAuditoriumAdd}" VerticalAlignment="Center" HorizontalAlignment="Stretch" FontSize="15" ItemsSource="{Binding AuditoriumsAdd}" Margin="35,0,35,0"></ComboBox>
+                    <Button Grid.Row="7" Grid.Column="1" Content="Добавить" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="35,0,35,0" Command="{Binding AddCommand}" FontSize="20"></Button>
+                    <Label Grid.Row="7" Grid.ColumnSpan="3" Content="Если кнопка заблокирована, то либо не все поля заполнены, либо такая пара уже существует" VerticalAlignment="Top" HorizontalAlignment="Center"></Label>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Page>

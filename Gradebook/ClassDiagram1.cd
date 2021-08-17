@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Gradebook.App" Collapsed="true">
+    <Position X="70.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Context" Collapsed="true">
+    <Position X="79.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAQBAACAAAAAAFAAAAAAAAAAAAAFBAAiCAAABmAAI=</HashCode>
+      <FileName>DataBase\Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Teacher" Collapsed="true">
+    <Position X="72.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAEAAAAAAAAAAAAAAAQAAREAAAAACAEAQAAAggAA=</HashCode>
+      <FileName>Models\Teacher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.MyContextInitializer" Collapsed="true">
+    <Position X="72.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyContextInitializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Authorization" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="72.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Authorization.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gradebook.Commands.CommandReference" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="77.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAACAAUAAEAABAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Commands\CommandReference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gradebook.Commands.DelegateCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="74" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAABAQACCAQQAAEQAAAAAAAAAAAAAAAAAAACAAEA=</HashCode>
+      <FileName>Commands\DelegateCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gradebook.Commands.DelegateCommand&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="75.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAABAQACCAQQAAEQAAAAAAAAAAAAAAAAAAACAAEA=</HashCode>
+      <FileName>Commands\DelegateCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gradebook.Commands.CommandManagerHelper" Collapsed="true">
+    <Position X="75.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACEAAAAAACAAAAAAAAAAAAAAABAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Commands\DelegateCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Models.Class" Collapsed="true">
+    <Position X="74" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAEAAAAAAAEAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Models\Class.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Models.Data" Collapsed="true">
+    <Position X="72.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Data.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Models.Exam" Collapsed="true">
+    <Position X="77.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ICEAAEAgAAAAAABAAIAAAAAAAAAAAIAAAAAAAAAAgAA=</HashCode>
+      <FileName>Models\Exam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Models.ExamResult" Collapsed="true">
+    <Position X="79.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAAAAAAgQABAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ExamResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Models.Group" Collapsed="true">
+    <Position X="74" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ECIAAEAAAAAAAAAAAAAAAAQAQEAAAAAAAEAAAAAgAAA=</HashCode>
+      <FileName>Models\Group.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Models.Lab" Collapsed="true">
+    <Position X="75.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACEAAEAAAgAAAABAAICAAAQAAAAAAABAAAAAAAAAgAA=</HashCode>
+      <FileName>Models\Lab.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Models.LabResult" Collapsed="true">
+    <Position X="77.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAQiAAAAAAAAAAAAAAAAAAAAABAACAACAAAAA=</HashCode>
+      <FileName>Models\LabResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Models.Missing" Collapsed="true">
+    <Position X="81" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCEABEAAQgAAAABAAIAAAAAAAAAAAAABAAAAAAAAgAA=</HashCode>
+      <FileName>Models\Missing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Models.RegistrationStud" Collapsed="true">
+    <Position X="75.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAEAAAgAAgAAAAAAAAAAABAAAAAACAAAQAAAAAAA=</HashCode>
+      <FileName>Models\RegistrationStud.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Models.RegistrationTeach" Collapsed="true">
+    <Position X="79.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAIAAAAAABAAAAAACAAAQAAAAAAA=</HashCode>
+      <FileName>Models\RegistrationTeach.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Models.Schedule" Collapsed="true">
+    <Position X="72.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACEAAEAAAAAAAABAAMIACAAAAAAAABAAACAAAAAAgAA=</HashCode>
+      <FileName>Models\Schedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Models.Student" Collapsed="true">
+    <Position X="75.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAEAAAgAAAAAAAAAABAAARAAAAIBCAAAQAAAAAAA=</HashCode>
+      <FileName>Models\Student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Models.Subject" Collapsed="true">
+    <Position X="81" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAkAAAgAAAABAAAAEAAQAQEAAAAAAAEAQAgAAAAA=</HashCode>
+      <FileName>Models\Subject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Models.SubjectType" Collapsed="true">
+    <Position X="70.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAACAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\SubjectType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Models.Test" Collapsed="true">
+    <Position X="77.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACUAAEAAAgAABABAIIAABAQAAAAAAAAAAAAAAAAAgBA=</HashCode>
+      <FileName>Models\Test.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Models.TestResult" Collapsed="true">
+    <Position X="79.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAgAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAABA=</HashCode>
+      <FileName>Models\TestResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Models.TestType" Collapsed="true">
+    <Position X="81" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAIAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TestType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Models.Weekday" Collapsed="true">
+    <Position X="75.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAQAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Weekday.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Properties.Resources" Collapsed="true">
+    <Position X="70.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Properties.Settings" Collapsed="true">
+    <Position X="74" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.AuthorizationViewModel" Collapsed="true">
+    <Position X="36.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAASgAoAAAAAAACAIABAAAAAAgBAKABAQMACACCA=</HashCode>
+      <FileName>ViewModels\AuthorizationViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.ClassViewModel" Collapsed="true">
+    <Position X="34.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAIAAAAAAEAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>ViewModels\ClassViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.ControlsStudentViewModel" Collapsed="true">
+    <Position X="27.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAQgAAAAAEAAAEAAAAAAAAAAAAAAAAAAABABA=</HashCode>
+      <FileName>ViewModels\ControlsStudentViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.ControlsTeacherViewModel" Collapsed="true">
+    <Position X="25.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KIPiALgAQlYEAAASpAAEAAAAAAAEEAAAAAQCBEAEoBA=</HashCode>
+      <FileName>ViewModels\ControlsTeacherViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.ExamResultViewModel" Collapsed="true">
+    <Position X="32" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAQAAAAAABBAACAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ExamResultViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.ExamsStudentViewModel" Collapsed="true">
+    <Position X="70.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ExamsStudentViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.ExamsTeacherViewModel" Collapsed="true">
+    <Position X="43.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAMiAIgAAhKEAAAapAAQAABCEAiAAgAIAAQAAEAEIAA=</HashCode>
+      <FileName>ViewModels\ExamsTeacherViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.ExamViewModel" Collapsed="true">
+    <Position X="27.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAEAAAAAAAAAAAIAAAAAAAAAAAIBBAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ExamViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.GradebookMainViewModel" Collapsed="true">
+    <Position X="34.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AA4ACAIgAAAAEAQBAAAACAAAAAAAACAAAAAgAAAAAAA=</HashCode>
+      <FileName>ViewModels\GradebookMainViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.GroupViewModel" Collapsed="true">
+    <Position X="41" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAEAAAAAAAAAAAAAAAAQAQEAAAAAAAEAAAAAgAAA=</HashCode>
+      <FileName>ViewModels\GroupViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.LabResultViewModel" Collapsed="true">
+    <Position X="38.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQCAAAAAAAAACAAAAAAAAAAABAACAAAAAAAA=</HashCode>
+      <FileName>ViewModels\LabResultViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.LabsTeacherViewModel" Collapsed="true">
+    <Position X="43.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KINiIJgAQhYEAAASpAIAAAACAAEAAgABAASDBEAEIRA=</HashCode>
+      <FileName>ViewModels\LabsTeacherViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.LabViewModel" Collapsed="true">
+    <Position X="25.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAEAAACAAAAAAAIAAAAQAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\LabViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.MissingsTeacherViewModel" Collapsed="true">
+    <Position X="27.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KINCABgARhIEAAASpAAABAACBAAAAggAAAAKAAAAABA=</HashCode>
+      <FileName>ViewModels\MissingsTeacherViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.MissingViewModel" Collapsed="true">
+    <Position X="34.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAEAAYAAAAAAAAIAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MissingViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.ProgressStudentViewModel" Collapsed="true">
+    <Position X="41" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAQBAAQgAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>ViewModels\ProgressStudentViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.RegistrationStudentViewModel" Collapsed="true">
+    <Position X="23" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QQgAAEEgAgAAAABEAAAEBAAABAAgAAAAAAIQAAAAEAA=</HashCode>
+      <FileName>ViewModels\RegistrationStudentViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.RegistrationStudViewModel" Collapsed="true">
+    <Position X="29.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAABAAAAAACAAAQAAAEAAA=</HashCode>
+      <FileName>ViewModels\RegistrationStudViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.RegistrationTeacherViewModel" Collapsed="true">
+    <Position X="36.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAFMAAgAAAABgAAAEAAAABAAAAAAAAAAQAACAEBA=</HashCode>
+      <FileName>ViewModels\RegistrationTeacherViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.RegistrationTeachViewModel" Collapsed="true">
+    <Position X="43.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAABAAAAAACAAAQAAAEAAA=</HashCode>
+      <FileName>ViewModels\RegistrationTeachViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.ScheduleViewModel" Collapsed="true">
+    <Position X="41" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAEAAAAAAAAAAAIIAAAAAAEAAABAAACAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ScheduleViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.StudentGradebookViewModel" Collapsed="true">
+    <Position X="79.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAQEQkAAAAAAAAAAAAAAAAAAAQANAAEAAQCgABA=</HashCode>
+      <FileName>ViewModels\StudentGradebookViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.StudentViewModel" Collapsed="true">
+    <Position X="23" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAQAAAAAAAAAAABAAARAAAAIBCAAAQAAAAAAA=</HashCode>
+      <FileName>ViewModels\StudentViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.SubjectTypeViewModel" Collapsed="true">
+    <Position X="29.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>ViewModels\SubjectTypeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.SubjectViewModel" Collapsed="true">
+    <Position X="36.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAkAAAAAAAAAAAIAAAAQAQEAAAAAAAEAQAgAAAAA=</HashCode>
+      <FileName>ViewModels\SubjectViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.TeacherGradebookViewModel" Collapsed="true">
+    <Position X="75.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAEAECQAAkAAAAAIAgAACQIAQAAAAAAMAEBACAAgQBg=</HashCode>
+      <FileName>ViewModels\TeacherGradebookViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.TeacherViewModel" Collapsed="true">
+    <Position X="25.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAMAAEAAAAAAAAAAAAQAAQAAREAAAAACAEAQAAAgAAA=</HashCode>
+      <FileName>ViewModels\TeacherViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.TestResultViewModel" Collapsed="true">
+    <Position X="32" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAA=</HashCode>
+      <FileName>ViewModels\TestResultViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.TestTypeViewModel" Collapsed="true">
+    <Position X="38.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\TestTypeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.TestViewModel" Collapsed="true">
+    <Position X="34.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAAEAAAAAAAAAAAIAABAQAAAAAAAABAAAACAAAAAA=</HashCode>
+      <FileName>ViewModels\TestViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.TimetableTeacherViewModel" Collapsed="true">
+    <Position X="32" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>qIMAAAhQAgIEFAkDpAQBAAAAAAIAEAMAAAICQgICCAA=</HashCode>
+      <FileName>ViewModels\TimetableTeacherViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.TimetableViewModel" Collapsed="true">
+    <Position X="29.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEBQAgAEAAAABAAAAAAAAAAAEAIAAAAAQAIACAA=</HashCode>
+      <FileName>ViewModels\TimetableViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.UsersTeacherViewModel" Collapsed="true">
+    <Position X="23" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAgCiAEBAEgAQQAAAAAAAAAAAgAEQIIAASCAAA=</HashCode>
+      <FileName>ViewModels\UsersTeacherViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.ViewModelBase" Collapsed="true">
+    <Position X="34.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Gradebook.ViewModels.WeekdayViewModel" Collapsed="true">
+    <Position X="38.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAEAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\WeekdayViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.ViewModels.WelcomePageStudentViewModel" Collapsed="true">
+    <Position X="81" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCEAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\WelcomePageStudentViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gradebook.Views.ControlsStudent" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="81" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ControlsStudent.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gradebook.Views.ControlsTeacher" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="70.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ControlsTeacher.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gradebook.Views.ExamsStudent" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="81" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ExamsStudent.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gradebook.Views.ExamsTeacher" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="72.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ExamsTeacher.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gradebook.Views.LabsTeacher" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="79.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\LabsTeacher.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gradebook.Views.MissingsTeacher" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="70.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\MissingsTeacher.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gradebook.Views.ProgressStudent" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="74" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ProgressStudent.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gradebook.Views.RegistrationStudent" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="77.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\RegistrationStudent.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gradebook.Views.RegistrationTeacher" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="81" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\RegistrationTeacher.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gradebook.Views.StudentGradebook" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="77.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\StudentGradebook.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gradebook.Views.TeacherGradebook" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="74" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\TeacherGradebook.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gradebook.Views.Timetable" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="70.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Timetable.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gradebook.Views.TimetableTeacher" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="72.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\TimetableTeacher.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gradebook.Views.UsersTeacher" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="74" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\UsersTeacher.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gradebook.Views.WelcomePage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="77.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\WelcomePage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gradebook.Views.WelcomePageStudent" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="79.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\WelcomePageStudent.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="Gradebook.IPasswordSupplier" Collapsed="true">
+    <Position X="70.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Authorization.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

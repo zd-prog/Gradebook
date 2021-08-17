@@ -1,0 +1,39 @@
+﻿<Window x:Class="Gradebook.Views.RegistrationTeacher"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gradebook.Views"
+        mc:Ignorable="d"
+        Title="RegistrationTeacher" MinHeight="450" MaxHeight="450" MinWidth="400" MaxWidth="400" WindowStartupLocation="CenterScreen">
+    <Grid Background="#333333">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="1.8*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="Фамилия и имя" FontSize="18" Foreground="#ffff" VerticalAlignment="Center" HorizontalAlignment="Right"></Label>
+        <TextBox TextElement.Foreground="White" Text="{Binding Surname, Mode=TwoWay}" x:Name="SurnameText" Width="200" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18"></TextBox>
+        <Label Grid.Row="1" Grid.Column="0" Content="Предмет" FontSize="18" Foreground="#ffff" VerticalAlignment="Center" HorizontalAlignment="Right"></Label>
+        <ComboBox Background="#333333" Style="{StaticResource MaterialDesignFilledComboBox}" TextElement.Foreground="White" SelectedItem="{Binding SelectedSubject}" ItemsSource="{Binding Subjects}" x:Name="TeacherSubjects" Width="200" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18">
+            <ComboBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Background="#333333"></StackPanel>
+                </ItemsPanelTemplate>
+            </ComboBox.ItemsPanel>
+        </ComboBox>
+        <Label  Grid.Row="2" Grid.Column="0" Content="Логин" FontSize="18" Foreground="#ffff" VerticalAlignment="Center" HorizontalAlignment="Right"></Label>
+        <TextBox TextElement.Foreground="White" Text="{Binding Login, Mode=TwoWay}" x:Name="LoginText" Width="200" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18"></TextBox>
+        <Label Grid.Row="3" Grid.Column="0" Content="Пароль" FontSize="18" Foreground="#ffff" VerticalAlignment="Center" HorizontalAlignment="Right"></Label>
+        <PasswordBox TextElement.Foreground="White" x:Name="PasswordText" Width="200" PasswordChar="*" MaxLength="8" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18"></PasswordBox>
+        <Label Content="{Binding Path= ErrorMessage}" x:Name="ErrorMessage" Grid.Row="4" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="12" Foreground="White"></Label>
+        <Button Command="{Binding AddTeacherCommand}" Grid.ColumnSpan="2" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Зарегистрироваться" FontSize="18"></Button>
+    </Grid>
+</Window>

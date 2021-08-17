@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="Gradebook.Views.Timetable"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Gradebook.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="Номер недели" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="#403f3f" FontSize="21"></Label>
+        <ComboBox IsSynchronizedWithCurrentItem="True" SelectedItem="{Binding WeekNumber}" Name="WeekNumberSelect" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" ItemsSource="{Binding WeekNumbers}" Width="150"></ComboBox>
+        <Label Grid.Row="1" Grid.Column="0" Content="Понедельник" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#403f3f" FontSize="25"></Label>
+        <DataGrid AutoGenerateColumns="False" Grid.Row="2" Grid.Column="0" ItemsSource="{Binding MondayClasses}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Class.Time}"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Subject.Name}"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Auditorium}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Grid.Row="1" Grid.Column="1" Content="Вторник" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#403f3f" FontSize="25"></Label>
+        <DataGrid AutoGenerateColumns="False" Grid.Row="2" Grid.Column="1" ItemsSource="{Binding TuesdayClasses}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Class.Time}"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Subject.Name}"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Auditorium}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Grid.Row="1" Grid.Column="2" Content="Среда" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#403f3f" FontSize="25"></Label>
+        <DataGrid AutoGenerateColumns="False" Grid.Row="2" Grid.Column="2" ItemsSource="{Binding WednesdayClasses}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Class.Time}"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Subject.Name}"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Auditorium}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Grid.Row="3" Grid.Column="0" Content="Четверг" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#403f3f" FontSize="25"></Label>
+        <DataGrid AutoGenerateColumns="False" Grid.Row="4" Grid.Column="0" ItemsSource="{Binding ThursdayClasses}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Class.Time}"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Subject.Name}"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Auditorium}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Grid.Row="3" Grid.Column="1" Content="Пятница" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#403f3f" FontSize="25"></Label>
+        <DataGrid AutoGenerateColumns="False" Grid.Row="4" Grid.Column="1" ItemsSource="{Binding FridayClasses}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Class.Time}"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Subject.Name}"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Auditorium}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Grid.Row="3" Grid.Column="2" Content="Суббота" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#403f3f" FontSize="25"></Label>
+        <DataGrid AutoGenerateColumns="False" Grid.Row="4" Grid.Column="2" ItemsSource="{Binding SaturdayClasses}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Class.Time}"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Subject.Name}"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Auditorium}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

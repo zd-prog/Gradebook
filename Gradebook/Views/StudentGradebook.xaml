@@ -1,0 +1,31 @@
+﻿<Window x:Class="Gradebook.Views.StudentGradebook"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gradebook.Views"
+        mc:Ignorable="d"
+        Title="StudentGradebook" WindowState="Maximized">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.RowSpan="8" Grid.Column="0" Background="#403f3f"></StackPanel>
+        <Button Height="50" Command="{Binding ProgressCommand}" Grid.Column="0" Grid.Row="0" Content="Оценки за лабораторные" Background="#d3d3d3" VerticalAlignment="Center" HorizontalAlignment="Stretch" FontSize="25" Margin="25,0,25,0"></Button>
+        <Button Height="50" Command="{Binding ControlsCommand}" Grid.Column="0" Grid.Row="1" Content="Оценки за контрольные" Background="#d3d3d3" VerticalAlignment="Center" HorizontalAlignment="Stretch" FontSize="25" Margin="25,0,25,0"></Button>
+        <Button Height="50" Command="{Binding ExamsCommand}" Grid.Column="0" Grid.Row="2" Content="Результаты экзаменов" Background="#d3d3d3" VerticalAlignment="Center" HorizontalAlignment="Stretch" FontSize="25" Margin="25,0,25,0"></Button>
+        <Button Height="50" Command="{Binding TimetableCommand}" Grid.Column="0" Grid.Row="3" Content="Расписание" Background="#d3d3d3" VerticalAlignment="Center" HorizontalAlignment="Stretch" FontSize="25" Margin="25,0,25,0"></Button>
+        <Button Height="50" Command="{Binding ExitCommand}" Grid.Column="0" Grid.Row="7" Content="Выход" Background="#d3d3d3" VerticalAlignment="Center" HorizontalAlignment="Stretch" FontSize="27" Margin="25,0,25,0"></Button>
+        <Frame x:Name="FramePage" Grid.RowSpan="8" Grid.Column="1"></Frame>
+    </Grid>
+</Window>
